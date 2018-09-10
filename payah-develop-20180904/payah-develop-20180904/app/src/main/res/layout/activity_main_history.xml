@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/history_title"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/dimen_20"
+        android:textColor="@color/colorTealDark"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/dividerHistory"
+        android:layout_height="5dp" />
+    <ListView
+        android:id="@+id/list_view_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+</LinearLayout>

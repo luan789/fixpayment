@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+
+        android:id="@+id/imgScan12"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintBottom_toTopOf="@id/line2"
+        app:layout_constraintLeft_toRightOf="@id/line3"
+        app:layout_constraintRight_toLeftOf="@id/line4"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_payment_code"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_percent="0.55"
+        android:orientation="horizontal"
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/line4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_percent="0.69"
+        android:orientation="horizontal"
+        android:id="@+id/line5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_percent="0.83"
+        android:orientation="horizontal"
+        android:id="@+id/line6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        app:layout_constraintGuide_percent="0.86"
+        android:orientation="horizontal"
+        android:id="@+id/line7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/line8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroundTopBarHighlight"
+        app:layout_constraintTop_toBottomOf="@id/line5"
+        app:layout_constraintBottom_toBottomOf="@id/line6"/>
+    <ImageView
+        app:layout_constraintRight_toRightOf="@id/line3"
+        app:layout_constraintTop_toTopOf="@id/line5"
+        app:layout_constraintBottom_toBottomOf="@id/line6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_payment_code"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_result_payment_code"
+        app:layout_constraintTop_toTopOf="@id/line5"
+        app:layout_constraintBottom_toBottomOf="@id/line6"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toLeftOf="@id/line8"/>
+
+    <FrameLayout
+        android:id="@+id/scan_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroundTopBar"
+        app:layout_constraintTop_toBottomOf="@id/line7"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_scan"
+        app:layout_constraintRight_toRightOf="@id/line3"
+        app:layout_constraintTop_toTopOf="@id/line7"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_result_scan"
+        app:layout_constraintTop_toTopOf="@id/line7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toLeftOf="@id/line8"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorTeal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/line10"
+        android:layout_height="0dp"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/line10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <Button
+        android:id="@+id/btn_scanqr_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/line10"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_back"
+        android:text="@string/button_back"/>
+
+</android.support.constraint.ConstraintLayout>

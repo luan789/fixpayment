@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/edittext_box_stroke_width"
+        android:color="@color/strokeEditText" />
+    <solid android:color="@color/backgroundEditText" />
+    <corners android:radius="@dimen/edittext_box_radius" />
+    <padding
+        android:bottom="@dimen/edittext_box_padding"
+        android:left="@dimen/edittext_box_padding"
+        android:right="@dimen/edittext_box_padding"
+        android:top="@dimen/edittext_box_padding" />
+</shape>

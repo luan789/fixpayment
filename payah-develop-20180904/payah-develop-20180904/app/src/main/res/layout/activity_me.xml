@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dividerHistory"
+    android:orientation="vertical">
+
+
+    <ImageView
+
+        android:id="@+id/imgUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:src="@drawable/ic_user" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_alignRight="@+id/tvStringAccout"
+        android:layout_below="@+id/tvUserName"
+        android:src="@drawable/ic_edit" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imgUser"
+        android:text="Username"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserName"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imgUser"
+        android:text="ID"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserId"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imgUser"
+        android:text="Email"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5"
+        android:layout_below="@id/imgUser"
+        android:background="@color/backgroundBottomBarHighlight" />
+
+    <TextView
+        android:id="@+id/Acount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvView"
+        android:padding="10dp"
+        android:text="@string/user_detail_account_class"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/tvStringAccout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Acount"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="Standard" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Acount"
+        android:padding="10dp"
+        android:text="@string/user_detail_balance"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/tvStringBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvBalance"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvStringAccout"
+        android:layout_marginRight="40dp"
+        android:text="MYR 10.00"
+        />
+
+    <TextView
+        android:id="@+id/tvMeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBalance"
+        android:background="@color/colorBackground"
+        android:padding="10dp"
+        android:text="@string/user_detail_full_name"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvStringName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvMeName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvStringBalance"
+        android:layout_marginRight="40dp"
+        android:text="NeLson C" />
+
+    <TextView
+        android:id="@+id/tvMePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMeName"
+        android:background="@color/colorBackground"
+        android:padding="10dp"
+        android:text="@string/user_detail_phone"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvMeMobiPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMePhone"
+        android:background="@color/colorBackground"
+        android:padding="10dp"
+        android:text="@string/user_detail_mobile_phone"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvStringNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvMeMobiPhone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="016434361"
+         />
+
+    <TextView
+        android:id="@+id/tvMeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMeMobiPhone"
+        android:background="@color/colorBackground"
+        android:padding="10dp"
+        android:text="@string/user_detail_email"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvStringMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvMeEmail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="nguyenbalam"
+         />
+
+    <TextView
+        android:id="@+id/tvMeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMeEmail"
+        android:background="@color/colorBackground"
+        android:padding="10dp"
+        android:text="@string/user_detail_address"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAbsoluteWhite"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textview_current_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview_current_title"
+        android:text="@string/balance_default_value"
+        android:textColor="@color/colorTealDark"
+        android:textSize="60dp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textview_current_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_currency"
+        android:gravity="center_vertical"
+        android:text="@string/balance_default_currency"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

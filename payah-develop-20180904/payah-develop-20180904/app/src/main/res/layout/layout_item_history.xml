@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5">
+
+    <TextView
+        android:id="@+id/item_date_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyen" />
+
+    <TextView
+        android:id="@+id/item_time_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_date_history"
+        android:text="ba" />
+    <TextView
+        android:id="@+id/item_price_history"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="AAAAAAAAAAA" />
+
+    <TextView
+        android:id="@+id/item_id_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_price_history"
+        android:layout_below="@+id/item_date_history"
+        android:text="BBBBBBBBBBBBB" />
+
+</RelativeLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dividerHistory">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_hor_line_22percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/topup_title"
+        android:textColor="@color/colorTealDark"
+        android:textSize="@dimen/dimen_20"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btn_back_topupsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_back"
+        android:text="@string/button_back"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_hor_line_44percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_ver_line_15percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_ver_line_85percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_ver_line_35percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_ver_line_65percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guide_hor_line_44percentsubmit"
+        app:layout_constraintLeft_toRightOf="@id/guide_ver_line_15percentsubmit"
+        app:layout_constraintRight_toRightOf="@id/guide_ver_line_85percentsubmit"
+        app:layout_constraintTop_toBottomOf="@id/guide_hor_line_22percentsubmit"
+        android:background="@color/colorAbsoluteWhite"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textview_current_value_topupsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textview_current_title"
+            android:text="@string/balance_default_value"
+            android:textColor="@color/colorTealDark"
+            android:textSize="60dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/textview_current_title_topupsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-30sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_currency"
+            android:gravity="center_vertical"
+            android:text="@string/balance_default_currency"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_amount_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text="@string/topup_min_amount"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_hor_line_44percentsubmit" />
+
+    <Button
+        android:id="@+id/btn_submit_topup"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/button_teal"
+        android:text="@string/button_submit"
+        android:textSize="@dimen/dimen_10"
+        app:layout_constraintLeft_toLeftOf="@id/guide_ver_line_35percentsubmit"
+        app:layout_constraintRight_toRightOf="@id/guide_ver_line_65percentsubmit"
+        app:layout_constraintTop_toBottomOf="@id/textview_amount_min" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_hor_line_50percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_hor_line_90percentsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@color/dividerTopBar"
+        android:dividerPadding="@dimen/dimen_2"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="@id/guide_hor_line_90percentsubmit"
+        app:layout_constraintLeft_toLeftOf="@id/guide_ver_line_15percentsubmit"
+        app:layout_constraintRight_toRightOf="@id/guide_ver_line_85percentsubmit"
+        app:layout_constraintTop_toBottomOf="@id/guide_hor_line_50percentsubmit">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:divider="@color/dividerTopBar"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/keyboard_num_7"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keyboard_num_8"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keyboard_num_9"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="9"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:divider="@color/dividerTopBar"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/keyboard_num_4"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="4"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keyboard_num_5"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keyboard_num_6"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="6"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:divider="@color/dividerTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/keyboard_num_1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keyboard_num_2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keyboard_num_3"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="3"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:divider="@color/dividerTopBar"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/keyboard_num_0"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/keyboard_num_backspace"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:text=""-->
+            <!--android:textStyle="bold" />-->
+            <ImageView
+                android:id="@+id/keyboard_num_backspace"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/dimen_5"
+                android:src="@drawable/ic_backspace"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

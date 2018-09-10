@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#007C92</color>
+    <color name="colorPrimaryDark">#231F20</color>
+    <color name="colorAccent">#FDCA2F</color>
+
+    <color name="colorBackground">#FEFEF2</color>
+    <color name="backgroundEditText">#F4F4EA</color>
+    <color name="strokeEditText">#B4B2A9</color>
+
+    <color name="backgroundTopBar">#B9DEE0</color>
+    <color name="backgroundTopBarHighlight">#84D1D6</color>
+    <color name="dividerTopBar">#939292</color>
+
+    <color name="backgroundBottomBar">@color/colorPrimary</color>
+    <color name="backgroundBottomBarHighlight">#4DC3C7</color>
+
+    <color name="dividerHistory">#FFF4C9</color>
+
+    <color name="colorUserDetailText">#9A9A9B</color>
+
+    <color name="colorSecondaryAccent">#FDCD07</color>
+    <color name="colorWhite">#F1F3F0</color>
+    <color name="colorAbsoluteWhite">#FFFFFF</color>
+    <color name="colorBlack">#5F5F61</color>
+    <color name="colorTeal">#53C1CB</color>
+    <color name="colorTealDark">#44B8BD</color>
+    <color name="colorTealLight">#E9F4EB</color>
+    <color name="colorRed">#ED2024</color>
+</resources>

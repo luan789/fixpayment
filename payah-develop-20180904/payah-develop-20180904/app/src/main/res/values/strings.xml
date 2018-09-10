@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Payah</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_new_user">New User?</string>
+    <string name="hint_login_id">Login ID</string>
+    <string name="hint_pin">(6 numbers)</string>
+    <string name="hint_referral_id">(Optional)</string>
+    <string name="hint_phone">Phone Number</string>
+
+
+    <string name="button_login">Login</string>
+    <string name="button_forget_password">Forgot Password</string>
+    <string name="button_signup">Signup</string>
+    <string name="button_back">Back</string>
+    <string name="button_topup">+ TOP UP</string>
+    <string name="button_submit">Submit</string>
+
+    <string name="subtitle_sabah_pay">Simplify Your Payment</string>
+
+    <string name="register_title">Register account</string>
+    <string name="register_field_name">Name</string>
+    <string name="register_field_id">ID</string>
+    <string name="register_field_pin">Pin</string>
+    <string name="register_field_confirm_pin">Confirm Pin</string>
+    <string name="register_field_email">Email</string>
+    <string name="register_field_address_1">Address</string>
+
+    <string name="menu_bottom_home">Home</string>
+    <string name="menu_bottom_history">History</string>
+    <string name="menu_bottom_me">Me</string>
+
+    <string name="menu_top_scan">Scan</string>
+    <string name="menu_top_topup">Topup</string>
+    <string name="menu_top_pay">Pay</string>
+    <string name="menu_top_transfer">Transfer</string>
+
+    <string name="balance_current_title">Current balance</string>
+    <string name="balance_default_value">10.00</string>
+    <string name="balance_default_currency">SGD</string>
+
+    <string name="topup_title">Top up</string>
+    <string name="topup_min_amount">* min top up is RM 10</string>
+
+    <string name="history_title">History</string>
+
+    <string name="scan_title">Scanning</string>
+    <string name="scan_align_qr">Please scan QR code to get started.\nAlign QR code within frame to scan.</string>
+    <string name="scan_result_payment_code">Payment Code</string>
+    <string name="scan_result_scan">Scan</string>
+
+    <string name="user_detail_account_class">Account Class</string>
+    <string name="user_detail_balance">Balance</string>
+    <string name="user_detail_full_name">Name</string>
+    <string name="user_detail_phone">Phone</string>
+    <string name="user_detail_mobile_phone">Mobile Phone</string>
+    <string name="user_detail_email">Email</string>
+    <string name="user_detail_address">Address</string>
+
+</resources>

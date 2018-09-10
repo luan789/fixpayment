@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurrentBalance">
+        <attr name="cus_current_balance_titile" format="string" />
+        <attr name="cus_current_balance_value" format="string" />
+
+        <attr name="hado_color_selected" format="color" />
+        <attr name="hado_color_unselected" format="color" />
+
+        <attr name="hado_distance" format="dimension" />
+    </declare-styleable>
+</resources>
